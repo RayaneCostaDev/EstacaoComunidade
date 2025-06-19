@@ -1,0 +1,344 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Fundo do site - Background - Corpo */
+body {
+    background-color: #F3F0FF; 
+    color: #1E293B; 
+    font-family: 'Open Sans', sans-serif; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar*/
+.navbar {
+    background: #7C3AED;
+    position: relative;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem 1rem;
+}
+
+/* Estilo para os itens do menu */
+#navbarNav .navbar-nav .nav-link {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s; 
+}
+
+#navbarNav .navbar-nav .nav-item + .nav-item {
+    margin-left: 2px;
+}
+
+/* Item ativo com fundo azul */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:not(.active):hover {
+    background-color: #FFC107;  
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.area-pesquisa {
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-lupa {
+    border-radius: 25px;
+}
+
+/* Responsividade do NavBar */
+@media (max-width:768px) {
+    .navbar-brand {
+        max-width: 72%;
+    }
+
+    .navbar-brand img {
+        height: auto;
+        max-height: 60px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .navbar-toggler {
+        max-width: 20%;
+    }
+}
+
+/* Estilo do botão toggler para fundo amarelo */
+.custom-toggler {
+    background-color: #FFC107; 
+    border: none; 
+}
+
+/* Estilo para o ícone do toggler com listras brancas */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath stroke='white' stroke-width='1.5' d='M2 4h12M2 8h12M2 12h12'/%3E%3C/svg%3E");
+}
+
+/* Define o tamanho fixo do carrossel apenas para telas maiores */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 20px;
+    }
+
+    .carousel-container .carousel-item img {
+        height: auto;
+        max-height: 250px;
+        border-radius: 20px;
+    }
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilo para os títulos*/
+h2 {
+    color: #7C3AED;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem; 
+    font-weight: bold; 
+    margin-top: 2rem; 
+    margin-bottom: 1.5rem; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilo para os cards */
+.card {
+    border-radius: 15px; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Arredondar as bordas das imagens dos cards */
+.card-img-top {
+    border-radius: 15px;
+}
+
+/* Efeito hover para os cards */
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilo para o título dos cards */
+.card-title {
+    font-family: 'Arial', sans-serif; 
+    color: #43A047; 
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+/* Estilo para o texto dos cards */
+.card-text {
+    font-family: 'Arial', sans-serif;
+    color: #64748B; 
+    font-size: 1rem;
+    text-align: center; 
+}
+
+/* Estilo para o botão do card */
+.card .btn {
+    display: block; 
+    width: 50%; 
+    margin: 0 auto; 
+    color: white; 
+    background-color: #FF7043; 
+    border: none; 
+    transition: background-color 0.3s ease; 
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Efeito hover para o botão */
+.card .btn:hover {
+    background-color: #e25d30; 
+}
+
+/*Área de texto do Sobre*/
+.text-container {
+    max-width: 800px; 
+    margin: 0 auto;   
+}
+
+.text-container p {
+    margin-bottom: 1.5rem; 
+}
+
+
+/* Estilo do footer */
+footer {
+    width: 100%;
+    background: #4C1D95;          
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+/* Estilos para os links do footer */
+.footer-nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding-left: 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Responsividade do Footer */
+@media (max-width: 768px) {
+.gallery {
+    margin: 30px auto;
+    right: 0;
+    }
+}
+
+.gallery img {
+    transition: transform 0.3s ease-in-out;
+    width: 100%; 
+    height: auto;     
+    object-fit: contain;   
+    max-height: 300px; 
+}
+
+.gallery img:hover {
+    transform: scale(1.1); 
+    cursor: pointer; 
+}
+
+/* Estilo para ícones circulares */
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Efeito de hover */
+.icon-circle:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+/* Estilização da caixa de formulário na página de Contato */
+#contato form {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Campos de entrada e seleção */
+#contato input[type="text"],
+#contato input[type="email"],
+#contato select {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Botão do formulário */
+#contato button[type="submit"] {
+    background-color: #FFC107;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#contato button[type="submit"]:hover {
+    background-color: #dba503;
+}
+
+.btn-laranja {
+    background-color: #F97316 !important; /* Laranja quente */
+    border-color: #F97316 !important;
+    color: white !important;
+}
+
+.btn-laranja:hover {
+    background-color: #ea580c !important; /* Tom mais escuro no hover */
+    border-color: #ea580c !important;
+}
+
+.text-muted {
+    color: #fff !important;
+}
+
+/* Estilização personalizada do cabeçalho da tabela */
+table.table thead.tabela-cabecalho th {
+    background-color:  #7C3AED  !important; /* Roxo */
+}
+
+table.table thead.tabela-cabecalho th {
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EstacaoComunidade - Quem Somos</title>
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="imagens/estacaocomunidade-logo.png" alt="Estação Comunidade" title="estacaocomunidade" height="100px">
+            </a>
+
+            <!-- Botão de Toggle para Mobile -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links da Navbar e barra de pesquisa -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jogos.html">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre.html">Sobre</a>
+                    </li>
+                </ul>
+
+                <!-- Barra de Pesquisa (exibida em telas maiores) -->
+                <form class="d-none d-lg-flex ms-3" role="search" id="form-pesquisa">
+                    <input aria-label="Campo de pesquisa" class="form-control me-2 area-pesquisa" type="search" id="campo-pesquisa" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-warning btn-lupa" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <div id="sugestoes" class="list-group position-absolute mt-5 w-100 z-3" style="max-height: 200px; overflow-y: auto;"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main role="main">
+        <section class="container my-5">
+
+            <!-- Texto "Sobre o EcoAventureiros" -->
+            <h2 class="text-center mb-4">Sobre a Estação Comunidade</h2>
+            <div class="text-container">
+                <p>
+                   A Estação Comunidade foi criada em 2025, idealizada por Rayane Fernandes desde sua adolescência ao observar poucos espaços de oportunidades aos moradores.
+                </p>
+                <p>
+                    Ao longo do tempo foi pensado no espaço para a realização das atividades, através de parcerias com comerciantes da própria comunidade, e que aos poucos o projeto passou a ser divulgado pelos outros bairros com objetivo de angariar fundos para continuar com as propostas pensadas.
+                </p>
+                    O objetivo é propiciar a todas as pessoas da comunidade espaços de lazer, cultura, informação, aprendizagem e de conviência, onde possamos cada vez mais ampliar nosso projeto e construir possibilidades de crescimento pessoal e profissional aos nossos moradores.
+                <p>
+                    Conheça nosso espaço, seja um patrocinador dos nossos projetos ou um voluntário. Nos ajude a continuar nossa missão.
+                </p>
+            </div>
+
+            <hr class="my-4">
+
+            <h2 class="text-center mb-4">Criado</h2>
+            <p class="text-center mb-4 text-container">
+                Conheça quem está por trás da Estação Comunidade! que foi pensado com carinho e dedicação.
+            </p>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img src="imagens/rayane2.jpg" class="card-img-top rounded mx-auto mt-3"
+                            alt="Membro 1" style="width: 150px; height: 100%; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rayane Fernandes</h5>
+                            <p class="card-text">Desenvolvedora responsável pelo design, codificação e implementação completa do site, desde o esboço inicial até a versão final.</p>
+                            <div>
+                                <a href="https://www.linkedin.com/in/rayanefernandesdacosta/" target="_blank"
+                                    class="icon-circle bg-primary text-white mx-1" title="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner Responsivo -->
+            <div class="banner text-center mb-4" style="margin-top: 50px;">
+                <img src="imagens/banner-pag-sobre.png" alt="Banner Estação Comunidade - Junte-se à Aventura de aprendizado!"
+                    class="img-fluid w-90" style="max-width: 100%; height: auto;">
+            </div>
+
+        </section>
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <a href="index.html">
+                            <img src="imagens/estacaocomunidade-logo.png" alt="" height="80px">
+                        </a>
+                        <p>Projeto criado por Rayane Fernandes. Juntos, proporcionando oportunidades e construindo um futuro mais justo para todos!
+                        </p>
+                        <!-- Ícones de Redes Sociais -->
+                        <div class="social-icons">
+                            <a href="https://github.com/RayaneCostaDev" target="_blank"
+                                class="text-white mx-2">
+                                <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h5>Mapa do Site</h5>
+                        <ul class="footer-nav">
+                            <li><a class="footer-nav-link" href="index.html">Página Inicial</a></li>
+                            <li><a class="footer-nav-link" href="jogos.html">Jogos Educativos</a></li>
+                            <li><a class="footer-nav-link" href="blog.html">Blog Educacional</a></li>
+                            <li><a class="footer-nav-link" href="cursos.html">Cursos e Atividades</a></li>
+                            <li><a class="footer-nav-link" href="sobre.html">Quem Somos</a></li>
+                            <li><a class="footer-nav-link" href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm6">
+                    <div class="single-box">
+                        <h5>Jogos</h5>
+                        <ul class="footer-nav">
+                            <li><a class="footer-nav-link" href="jogos/jogo-memoria.html">Jogo da Tradimemória</a></li>
+                            <li><a class="footer-nav-link" href="jogos/quiz.html">Trilha da Cultura</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm6">
+                    <div class="single-box">
+                        <img src="imagens/icone-footer.png" alt="" height="170px">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"></div>
+        </div>
+        <div class="text-center text-muted py-3" id="copyright"></div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

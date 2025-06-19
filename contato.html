@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EstacaoComunidade - Contato</title>
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="imagens/estacaocomunidade-logo.png" alt="EStação Comunidade" title="estacaocomunidade" height="100px">
+            </a>
+
+            <!-- Botão de Toggle para Mobile -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!-- Links da Navbar e barra de pesquisa -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jogos.html">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                </ul>
+
+                <!-- Barra de Pesquisa (exibida em telas maiores) -->
+                <form class="d-none d-lg-flex ms-3" role="search" id="form-pesquisa">
+                    <input aria-label="Campo de pesquisa" class="form-control me-2 area-pesquisa" type="search" id="campo-pesquisa" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-warning btn-lupa" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <div id="sugestoes" class="list-group position-absolute mt-5 w-100 z-3" style="max-height: 200px; overflow-y: auto;"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Formulário de Contato -->
+    <main class="container my-5" id="contato">
+        <div class="row justify-content-center">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <p class="text-center">Se inscreva para fazer parte do nosso projeto!</p>
+    
+            <div class="col-lg-6">
+                <form action="https://formsubmit.co/rayane.fernandesdacosta30@gmail.com" method="POST">
+    
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="atividade" class="form-label">Atividade</label>
+                        <input type="text" class="form-control" id="atividade" name="atividade" value="Inscrição no Projeto" readonly required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="curso" class="form-label">Selecione o curso:</label>
+                        <select class="form-select" id="curso" name="curso" required>
+                            <option value="">--Escolha uma opção--</option>
+                            <option value="Lash designer">Lash Designer</option>
+                            <option value="Inglês básico">Inglês Básico</option>
+                            <option value="Oficina de Barbearia">Oficina de Barbearia</option>
+                        </select>
+                    </div>
+    
+                    <!-- Configurações do FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="obrigado.html">
+    
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Enviar Inscrição</button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <a href="index.html">
+                            <img src="imagens/estacaocomunidade-logo.png" alt="" height="80px">
+                        </a>
+                        <p>Projeto criado por Rayane Fernandes. Juntos, proporcionando oportunidades e construindo um futuro mais justo para todos!
+                        </p>
+                        <!-- Ícones de Redes Sociais -->
+                        <div class="social-icons">
+                            <a href="https://github.com/RayaneCostaDev" target="_blank"
+                                class="text-white mx-2">
+                                <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                 </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h5>Mapa do Site</h5>
+                        <ul class="footer-nav">
+                            <li><a class="footer-nav-link" href="index.html">Página Inicial</a></li>
+                            <li><a class="footer-nav-link" href="jogos.html">Jogos Educativos</a></li>
+                            <li><a class="footer-nav-link" href="blog.html">Blog Educacional</a></li>
+                            <li><a class="footer-nav-link" href="cursos.html">Cursos e Atividades</a</li>
+                            <li><a class="footer-nav-link" href="sobre.html">Quem Somos</a></li>
+                            <li><a class="footer-nav-link" href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm6">
+                    <div class="single-box">
+                        <h5>Jogos</h5>
+                        <ul class="footer-nav">
+                            <li><a class="footer-nav-link" href="jogos/jogo-memoria.html">Jogo da Tradimemória</a></li>
+                            <li><a class="footer-nav-link" href="jogos/quiz.html">Trilha da Cultura</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm6">
+                    <div class="single-box">
+                        <img src="imagens/icone-footer.png" alt="" height="170px">
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"></div>
+        </div>
+        <div class="text-center text-muted py-3" id="copyright">
+            &copy; 2025 EstacaoComunidade. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <script>
+        // Função para obter parâmetros da URL
+        function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+        }
+      
+        // Preenche o campo "atividade" se o parâmetro existir
+        window.addEventListener("DOMContentLoaded", () => {
+          const atividade = getQueryParam("atividade");
+          if (atividade) {
+            const inputAtividade = document.getElementById("atividade");
+            if (inputAtividade) {
+              inputAtividade.value = atividade;
+            }
+          }
+        });
+      </script>
+
+</body>
+
+</html>

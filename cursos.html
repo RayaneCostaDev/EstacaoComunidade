@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EstacaoComunidade - Cursos</title>
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="imagens/estacaocomunidade-logo.png" alt="Estação Comunidade" height="100px" />
+      </a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="jogos.html">Jogos</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cursos.html">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        </ul>
+
+        <form class="d-none d-lg-flex ms-3" role="search" id="form-pesquisa">
+          <input aria-label="Campo de pesquisa" class="form-control me-2 area-pesquisa" type="search" id="campo-pesquisa" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-warning btn-lupa" type="submit">
+              <i class="bi bi-search"></i>
+          </button>
+          <div id="sugestoes" class="list-group position-absolute mt-5 w-100 z-3" style="max-height: 200px; overflow-y: auto;"></div>
+      </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Galeria -->
+  <main class="container gallery">
+    <h2 class="gallery-title text-center">Veja cursos e atividades do nosso projeto</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <!-- Galeria de imagens -->
+      <div class="col"><a href="galeria/foto-galeria1.png" target="_blank"><img src="galeria/foto-galeria1.png"
+            class="img-fluid rounded shadow" alt="Foto 1"></a></div>
+      <div class="col"><a href="galeria/foto-galeria2.png" target="_blank"><img src="galeria/foto-galeria2.png"
+            class="img-fluid rounded shadow" alt="Foto 2"></a></div>
+      <div class="col"><a href="galeria/foto-galeria3.png" target="_blank"><img src="galeria/foto-galeria3.png"
+            class="img-fluid rounded shadow" alt="Foto 3"></a></div>
+      <div class="col"><a href="galeria/foto-galeria4.png" target="_blank"><img src="galeria/foto-galeria4.png"
+            class="img-fluid rounded shadow" alt="Foto 4"></a></div>
+      <div class="col"><a href="galeria/foto-galeria5.png" target="_blank"><img src="galeria/foto-galeria5.png"
+            class="img-fluid rounded shadow" alt="Foto 5"></a></div>
+      <div class="col"><a href="galeria/foto-galeria6.png" target="_blank"><img src="galeria/foto-galeria6.png"
+            class="img-fluid rounded shadow" alt="Foto 6"></a></div>
+    </div>
+
+    <!-- Seção de cursos -->
+    <section id="cursos" class="mt-5">
+      <h2>Cursos e Oficinas</h2>
+      <ul>
+        <li>Lash designer - Toda Terça das 19:30h às 20:30h </li>
+        <li>Inglês básico - Segundas e Quartas das 08:30h às 11:30h</li>
+        <li>Oficina de Barbearia - Terças e Quintas das 19:30h às 20:30h</li>
+      </ul>
+    </section>
+
+    <!-- Seção de agenda -->
+    <section id="agenda" class="mt-5">
+      <h2>Agenda de Atividades</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead class="tabela-cabecalho">
+            <tr>
+              <th>Data</th>
+              <th>Atividade</th>
+              <th>Horário</th>
+              <th>Público</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10/07</td>
+              <td>Oficina de Culinária </td>
+              <td>14h às 16h</td>
+              <td>Adultos</td>
+              <td><a href="contato.html?atividade=Oficina%20de%20Culinária%20" class="btn btn-sm btn-laranja">Quero Participar</a></td>
+            </tr>
+            <tr>
+              <td>13/07</td>
+              <td>Futebol </td>
+              <td>10h às 12h</td>
+              <td>Crianças a partir de 6 anos e Adolescentes até 17 anos</td>
+              <td><a href="contato.html?atividade=Futebol%20%20%20" class="btn btn-sm btn-laranja">Quero Participar</a></td>
+            </tr>
+            <tr>
+              <td>15/07</td>
+              <td>Palestra: Direitos da Pessoa Idosa</td>
+              <td>9h às 11h</td>
+              <td>Idosos</td>
+              <td><a href="contato.html?atividade=Palestra%20Direitos%20da%20Pessoa%20Idosa" class="btn btn-sm btn-laranja">Quero Participar</a></td>
+            </tr>
+            <tr>
+              <td>18/07</td>
+              <td>Mutirão de Documentação</td>
+              <td>8h às 13h</td>
+              <td>Público geral</td>
+              <td><a href="contato.html?atividade=Mutirão%20de%20de%20Documentação" class="btn btn-sm btn-laranja">Quero Participar</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <a href="index.html">
+                            <img src="imagens/estacaocomunidade-logo.png" alt="" height="80px">
+                        </a>
+                        <p>Projeto criado por Rayane Fernandes. Juntos, proporcionando oportunidades e construindo um futuro mais justo para todos!
+                        </p>
+                        <!-- Ícones de Redes Sociais -->
+                        <div class="social-icons">
+                            <a href="https://github.com/RayaneCostaDev" target="_blank"
+                                class="text-white mx-2">
+                                <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h5>Mapa do Site</h5>
+                        <ul class="footer-nav">
+                            <li><a class="footer-nav-link" href="index.html">Página Inicial</a></li>
+                            <li><a class="footer-nav-link" href="jogos.html">Jogos Educativos</a></li>
+                            <li><a class="footer-nav-link" href="blog.html">Blog Educacional</a></li>
+                            <li><a class="footer-nav-link" href="cursos.html">Cursos e Atividades</a></li>
+                            <li><a class="footer-nav-link" href="sobre.html">Quem Somos</a></li>
+                            <li><a class="footer-nav-link" href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm6">
+                    <div class="single-box">
+                        <h5>Jogos</h5>
+                        <ul class="footer-nav">
+                            <li><a class="footer-nav-link" href="jogos/jogo-memoria.html">Jogo da Tradimemória</a></li>
+                            <li><a class="footer-nav-link" href="jogos/quiz.html">Trilha da Cultura</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm6">
+                    <div class="single-box">
+                        <img src="imagens/icone-footer.png" alt="" height="170px">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"></div>
+        </div>
+        <div class="text-center text-muted py-3" id="copyright"></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+    <script src="./js/js.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
